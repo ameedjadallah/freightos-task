@@ -5,16 +5,6 @@ from server.app.utils import predict_future_prices, load_user_data, load_market_
 router = APIRouter()
 
 
-# Example Usage:
-# db_connection = create_db_connection()  # Replace with actual DB connection
-# market_data = load_market_data(db_connection)
-# user_data = load_user_data(db_connection)
-# percentile_matches = match_percentile(user_data, market_data)
-# future_prices = predict_future_prices(market_data)
-# print(percentile_matches)
-# print(future_prices)
-
-
 @router.get("/predict-future-prices/")
 def get_future_price_predictions():
     try:
